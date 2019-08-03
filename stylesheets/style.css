@@ -2,3 +2,45 @@
     width: 1500px;
     height: 500px;
 }
+body {
+    margin: 10px;
+    background: white
+}
+.demo {
+    width: 384px;
+    height: 384px;
+    margin: 10px auto;
+    position: relative;
+}
+.div5 {
+    width: 384px;
+    height: 256px;
+}
+.div4 {
+    background: black;
+}
+.div4 span {
+    position: absolute;
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 0.6s ease;
+}
+.div4:hover span {
+    transition: color 0.6s ease;
+    color: rgba(255, 255, 255, 0.6);
+}
+.balloon-ctr {
+    text-align: center;
+}
+.demos-ctr .demo {
+    display: inline-block;
+}
+.control {
+    margin: 0px 20px;
+}
