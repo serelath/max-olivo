@@ -22,84 +22,18 @@
   </head>
   <body>
 
-      <div class="balloon-ctr">
-          <div class='div5 demo'></div>
-          <button class="previous control">PREVIOUS</span>
-          <button class="next control">NEXT</span>
-        </div>
-      
-        <div class="demos-ctr">
-          <div class='div-video demo'></div>
-          <div class='div demo'></div>
-          <div class='div2 demo'></div>
-          <div class='div3 demo'></div>
-          <div class='div4 demo'>
-            <span>MY BUTTON</span>
+    <div class="container">
+      <div class="landing">
+        <div class="slider">
+          <div class="content">
+
           </div>
-          <div class='div6 demo'></div>
+          <button class="previous control">PREVIOUS</button>
+          <button class="next control">NEXT</button>
         </div>
-      
-        <script>
-          var button = new hoverEffect({
-            parent: document.querySelector('.div-video'),
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'assets/images/fluid.jpg',
-            video: true
-          });
-          var button = new hoverEffect({
-            parent: document.querySelector('.div'),
-            intensity1: 0.1,
-            intensity2: 0.1,
-            angle2: Math.PI / 2,
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'assets/images/fluid.jpg'
-          });
-          var button2 = new hoverEffect({
-            parent: document.querySelector('.div2'),
-            intensity1: 0.25,
-            intensity2: 0.25,
-            angle1: Math.PI / 2,
-            angle2: -Math.PI / 2,
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'assets/images/fluid.jpg'
-          });
-          var button3 = new hoverEffect({
-            parent: document.querySelector('.div3'),
-            intensity: 0.3,
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'assets/images/fluid.jpg',
-            speedIn: 1.0,
-            speedOut: 1.0
-          });
-          var button4 = new hoverEffect({
-            parent: document.querySelector('.div4'),
-            intensity: 0.1,
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'assets/images/heightMap.png'
-          });
-          var button5 = new hoverEffect({
-            parent: document.querySelector('.div5'),
-            intensity: 1,
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'assets/images/fluid.jpg',
-            hover: false
-          });
-          document.querySelector('.next').addEventListener('click', button5.next);
-          document.querySelector('.previous').addEventListener('click', button5.previous);
-          var button6 = new hoverEffect({
-            parent: document.querySelector('.div6'),
-            intensity: 0.2,
-            image1: 'assets/images/1.jpeg',
-            image2: 'assets/images/2.jpeg',
-            displacementImage: 'images/heightMap.png'
-          });
-        </script>
+        <div class="distortion"></div>
+      </div>
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -109,6 +43,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     
     <!-- SCRIPT -->
-    <!-- <script src="scripts/script.js"></script> -->
+    <script src="scripts/script.js"></script>
   </body>
 </html>
