@@ -1,0 +1,78 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+
+body {
+    background-color: #fafafa;
+}
+
+//////////
+// TEXT //
+//////////
+h1 {
+    font-size: 6rem;
+    letter-spacing: 1.5rem;
+    font-weight: 700;
+    color: rgb(214, 64, 64);
+}
+
+#landing {
+    height: 100vh;
+    .landing-center {
+        @include centerer;
+        h1 {
+            span {
+                position: relative;
+                top: -160px;
+                &.max {
+                    // left: -50px;
+                    z-index: -1;
+                }
+                &.olivo {
+                    // right: -50px;
+                    top: 50px;
+                }
+            }
+        }
+        & > .max-portrait {
+            @include centerer;
+            position: fixed;
+            width: 500px !important;
+            max-width: none;
+            @include mQ($md) {
+                position: absolute;
+            }
+        }
+    }
+    .scroll-down > div {
+        background-color: #111;
+        border-radius: 50%;
+        @include centerX;
+        position: fixed;
+        &:first-child {
+            bottom: 150px;
+            width: 10px;
+            height: 10px;
+        }
+        &:nth-child(2) {
+            bottom: 160px;
+            width: 7px;
+            height: 7px;
+        }
+        &:nth-child(3) {
+            bottom: 140px;
+            width: 13px;
+            height: 13px;
+        }
+        &:nth-child(4) {
+            bottom: 125px;
+            width: 20px;
+            height: 20px;
+        }
+        &:nth-child(5) {
+            bottom: 90px;
+            width: 15px;
+            height: 15px;
+        }
+    }
+    
+}

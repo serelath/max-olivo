@@ -1,4 +1,67 @@
-.distortion {
-    width: 100vw;
-    height: calc(100vw / 3);
-}
+body {
+  background-color: #fafafa; }
+
+h1 {
+  font-size: 6rem;
+  letter-spacing: 1.5rem;
+  font-weight: 700;
+  color: #d64040; }
+
+#landing {
+  height: 100vh; }
+  #landing .landing-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    #landing .landing-center h1 span {
+      position: relative;
+      top: -160px; }
+      #landing .landing-center h1 span.max {
+        z-index: -1; }
+      #landing .landing-center h1 span.olivo {
+        top: 50px; }
+    #landing .landing-center > .max-portrait {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      position: fixed;
+      width: 500px !important;
+      max-width: none; }
+      @media (max-width: 1200px) {
+        #landing .landing-center > .max-portrait {
+          position: absolute; } }
+  #landing .scroll-down > div {
+    background-color: #111;
+    border-radius: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+    position: fixed; }
+    #landing .scroll-down > div:first-child {
+      bottom: 150px;
+      width: 10px;
+      height: 10px; }
+    #landing .scroll-down > div:nth-child(2) {
+      bottom: 160px;
+      width: 7px;
+      height: 7px; }
+    #landing .scroll-down > div:nth-child(3) {
+      bottom: 140px;
+      width: 13px;
+      height: 13px; }
+    #landing .scroll-down > div:nth-child(4) {
+      bottom: 125px;
+      width: 20px;
+      height: 20px; }
+    #landing .scroll-down > div:nth-child(5) {
+      bottom: 90px;
+      width: 15px;
+      height: 15px; }
