@@ -31,7 +31,8 @@ h1 {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       position: fixed;
-      width: 500px !important;
+      width: calc(3375px / 5) !important;
+      height: calc(2250px / 5);
       max-width: none; }
       @media (max-width: 1200px) {
         #landing .landing-center > .max-portrait {

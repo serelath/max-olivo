@@ -36,7 +36,8 @@ h1 {
         & > .max-portrait {
             @include centerer;
             position: fixed;
-            width: 500px !important;
+            width: calc(3375px / 5) !important;
+            height: calc(2250px / 5);
             max-width: none;
             @include mQ($md) {
                 position: absolute;
