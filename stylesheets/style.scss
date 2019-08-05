@@ -3,6 +3,7 @@
 
 body {
     background-color: #fafafa;
+    cursor: crosshair;
 }
 
 //////////
@@ -36,8 +37,8 @@ h1 {
         & > .max-portrait {
             @include centerer;
             position: fixed;
-            width: calc(3375px / 5) !important;
-            height: calc(2250px / 5);
+            width: calc(3375px / 6) !important;
+            height: calc(2250px / 6);
             max-width: none;
             @include mQ($md) {
                 position: absolute;
@@ -76,4 +77,17 @@ h1 {
         }
     }
     
+}
+
+#ball {
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 1px solid #111;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -10px 0 0 -10px;
+    pointer-events: none;
 }

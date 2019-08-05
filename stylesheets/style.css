@@ -1,5 +1,6 @@
 body {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  cursor: crosshair; }
 
 h1 {
   font-size: 6rem;
@@ -31,8 +32,8 @@ h1 {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       position: fixed;
-      width: calc(3375px / 5) !important;
-      height: calc(2250px / 5);
+      width: calc(3375px / 6) !important;
+      height: calc(2250px / 6);
       max-width: none; }
       @media (max-width: 1200px) {
         #landing .landing-center > .max-portrait {
@@ -66,3 +67,15 @@ h1 {
       bottom: 90px;
       width: 15px;
       height: 15px; }
+
+#ball {
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: 1px solid #111;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -10px;
+  pointer-events: none; }
